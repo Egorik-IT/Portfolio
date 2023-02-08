@@ -174,6 +174,9 @@ body{
 .password__input:hover{
     cursor:pointer;
 }
+.on__visible__password{
+    margin-right: 6px;
+}
 .visible__password{
     color: rgb(231, 231, 231);
     display: flex;
