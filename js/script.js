@@ -156,17 +156,11 @@ function Access_Is_Open_Or_Access_Is_Closed(){
 }
 };
 
-const yes__visible__password = document.querySelector(".visible__password");
-const input__visible__password = document.querySelector (".on__visible__password");
-
-yes__visible__password.addEventListener("mousedown", function(event){
-    on__visible__password();
-});
-function on__visible__password(){
-    input__visible__password.checked = "checked";
-    document.querySelector(".password__fild").type = "text";
-    if(yes__visible__password.addEventListener("mousedown", function(event){
-        input__visible__password.checked = "";
-        document.querySelector(".password__fild").type = "password";
-    }));
-}
+function trebuhov(){
+    let inputPassword = document.querySelector('.password__fild');
+    if(inputPassword.getAttribute('type') == 'password'){
+       inputPassword.setAttribute('type', 'text')
+    }else{
+        inputPassword.setAttribute('type', 'password')
+    }
+};
